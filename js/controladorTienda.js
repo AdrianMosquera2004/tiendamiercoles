@@ -1,32 +1,19 @@
-//ENTRADAS DEL PROBELMA (comentario de liena)
+//controlando etiquetas
 
-/*
-Esto es
-un 
-Comentario de bloque
-*/
-//ENTRADAS==VARIABLES==CONSTANTES
-let nombreproducto="Camisetas de Tupac Shakur"
-let precioProducto=80000
-let pesoProducto=18.9
-let tieneDescuento=true
-let descricionProducto="Camisetas de la Linea  Tupac Shakur"
-let telefonoVendedor="3215745296"
+//1. crear  una variable para guardar una etiqueta
+let etiquetaTitulo = document.getElementById("titulo")
+console.log(etiquetaTitulo)
 
-const NOMBRE_CLIENTE="Adrian"
+//2. como modificar el texto de una etiqueta
+etiquetaTitulo.textContent="la buena mi so"
+let etiquetamenu = document.getElementById("menu")
+etiquetamenu.textContent="Tupac Shakur"
 
-//Arreglos unidimensionales (vectores) 
-//Sirven para almacenar varios elementos en 1 sola variable
+//controlando una foto
+let etiquetaFoto=document.getElementById("foto12")
+console.log(etiquetaFoto)
+etiquetaFoto.src="img/3.jpg"
 
-let productos=["Camisetas, Pantalones, Pañoletas"]
-let productos2= Array("Camiseta, Pantalones, Pañoletas, Juana")
-
-
-//SALIDAS 
-console.log("Mi perro")
-console.log(nombreproducto)
-console.log("su nombre es: "+NOMBRE_CLIENTE+" y su producto es: "+nombreproducto)
-console.log(`su nombrer es: ${NOMBRE_CLIENTE} y su producto es ${nombreproducto}`)
-console.log(productos)
-console.log(productos2[2])
-
+//cambiar estilo de la etiqueta
+etiquetaTitulo.classList.add("text-center")
+etiquetaTitulo.classList.add("text-danger")
